@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Item({ item, onDeleteItems, onToggleItems }) {
+export default function Item({ item, onDeleteItems, onToggleItems }) {
   return (
     <li>
       <input
