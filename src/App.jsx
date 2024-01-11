@@ -9,6 +9,7 @@ import "./index.css";
 
 export default function App() {
   const [items, setItems] = useState([]);
+  const numItems = items.length;
 
   function handleAddItemes(item) {
     setItems((items) => [...items, item]);
@@ -35,7 +36,7 @@ export default function App() {
         onDeleteItems={handleDeleteItems}
         onToggleItems={handleToggleItem}
       />
-      <Stats />
+      <Stats numItems={numItems} />
     </div>
   );
 }
@@ -123,10 +124,12 @@ function Item({ item, onDeleteItems, onToggleItems }) {
   );
 }
 
-function Stats() {
+function Stats({ numItems }) {
   return (
     <footer className="stats">
-      <em>🧳 you have X items on your list, and you already packed x (x%)</em>
+      <em>
+        🧳 you have {numItems} items on your list, and you already packed x (x%)
+      </em>
     </footer>
   );
 }
