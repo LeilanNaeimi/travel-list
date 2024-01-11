@@ -23,7 +23,7 @@ export default function PakingList({
       .sort((a, b) => Number(a.packed) - Number(b.packed));
   return (
     <div className="list">
-      <ul>
+      <ul style={{ height: "300px", overflowY: "scroll" }}>
         {sortedItems.map((item) => (
           <Item
             item={item}
