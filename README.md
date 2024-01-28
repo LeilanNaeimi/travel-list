@@ -1,8 +1,5 @@
-# React + Vite
+# Travel list
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ ![1](https://github.com/naleilan/travel-list/assets/7776224/14f360a5-f2d4-466b-949a-1a151bdd5d1d)
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* React project managing a packing list with features like adding items, deleting, toggling item status, and clearing the list. Includes a logo, form for item input, a dynamic packing list, and statistics display
